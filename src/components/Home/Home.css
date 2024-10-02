@@ -1,0 +1,23 @@
+.landing-page{
+    height: 600px;
+    
+    background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/6Chkl4XmKkDeGjBsf1EMs1/59ee77cd5c845d49539458522bb9da2c/Hero_Large_-_Walking_USandCA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -50px;
+   
+}
+
+.transparent-layer{
+    height: 600px;
+    width: 100%;
+    background: rgba(24, 26, 29, 0.3);
+    /* opacity: 0.3; */
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.features{
+    height: 1000px;
+}
