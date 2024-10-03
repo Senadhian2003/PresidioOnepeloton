@@ -1,6 +1,9 @@
 import React from 'react'
 import ActionButton from '../Buttons/ActionButton'
 function ShopEquipmentCard({title, content, price, buttonContent,imageUrl, subscriptionMessage,isFinalAndOdd }) {
+
+  
+
   return (
     <div className={isFinalAndOdd ? 'col-lg-12' : 'col-lg-6'}>
     <div className={isFinalAndOdd ? 'shop-equipment-card-final-odd' : 'shop-equipment-card'} >
