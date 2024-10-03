@@ -11,7 +11,7 @@ function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const navbar = document.querySelector(".navbar");
+            const navbar = document.querySelector(".navbar-onepeloton");
             const scrollTop = window.scrollY; // Get the current scroll position
             const maxScroll = 800; // Set the scroll distance where opacity will reach 1
         
@@ -33,11 +33,11 @@ function Navbar() {
 
 
   return (
-    <div className='navbar'>
+    <div className='navbar-onepeloton'>
         
-        <p className='nav-header' >PELOTON</p>
+        <p className='nav-header-text' >PELOTON</p>
 
-        <ul className='nav-elements'>
+        <ul className='nav-elements-content'>
 
         <li>
             Classes

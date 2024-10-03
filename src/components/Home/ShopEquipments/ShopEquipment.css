@@ -1,0 +1,60 @@
+.shop-equipment{
+    margin-top: 200px;
+    height: 1900px;
+    background-color: #f4f7f9;
+
+    .shopping-container{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .shop-equipment-card{
+        height: 750px;
+        
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 8px;
+        margin: 10px;
+        text-align: center;
+        
+    }
+
+    .shop-equipment-card-container{
+        /* margin-top: 100px; */
+        padding: 12%;
+    }
+
+    .heading{
+        font-size: 38px;
+    }
+
+    .content{
+        color: #8e8f92;
+        font-size: 18px;
+    }
+
+    .shop-now{
+       margin-bottom: 0 ;
+       margin-left: 20px;
+       font-size: 18px;
+       text-decoration: underline; 
+    }
+
+    @media screen and (max-width: 1020px) {
+        .shopping-container {
+         padding-left: 0;
+         padding-right: 0;
+        }
+
+        .shop-equipment-card{
+            height: 450px;
+            
+           
+            
+        }
+
+      }
+
+
+}
+

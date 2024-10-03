@@ -1,23 +1,78 @@
-.landing-page{
-    height: 600px;
+.home{
+    .landing-page{
+        height: 600px;
+        
+        background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/6Chkl4XmKkDeGjBsf1EMs1/59ee77cd5c845d49539458522bb9da2c/Hero_Large_-_Walking_USandCA.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -50px;
+       
+    }
     
-    background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/6Chkl4XmKkDeGjBsf1EMs1/59ee77cd5c845d49539458522bb9da2c/Hero_Large_-_Walking_USandCA.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -50px;
+    .transparent-layer{
+        height: 600px;
+        width: 100%;
+        background: rgba(24, 26, 29, 0.3);
+        /* opacity: 0.3; */
+        
+        position: absolute;
+        z-index: 1;
+    }
+    
    
+
+    .landing-content{
+        height: 550px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        z-index: 10;
+        position: relative;
+    }
+
+    .welcome-text{
+        font-size: 18px;
+    }
+
+    .welcome-quote{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+   
+      
+     
+
 }
 
-.transparent-layer{
-    height: 600px;
-    width: 100%;
-    background: rgba(24, 26, 29, 0.3);
-    /* opacity: 0.3; */
-    
-    position: absolute;
-    z-index: 1;
+
+
+.bouncing {
+
+    animation: bounce 1.5s ease-in-out infinite; 
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0) rotate(-90deg); 
+    }
+    50% {
+      transform: translateY(-10px) rotate(-90deg); 
+    }
+    100%{
+        transform: translateY(0) rotate(-90deg);
+    }
+  }
+
+.equipments{
+    padding: 40px 0;
+    background-color: #F4F7F9;
+
 }
 
-.features{
-    height: 1000px;
+.another{
+    height: 700px;
 }

@@ -1,0 +1,28 @@
+.equipments {
+    
+    background-color: #F4F7F9;
+    overflow: hidden;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+   
+  }
+  
+  .equipmentSlider {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    padding: 20px 0;
+  }
+  
+  .equipmentSlider::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  

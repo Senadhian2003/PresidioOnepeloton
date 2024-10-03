@@ -1,0 +1,27 @@
+.landingButton{
+    width: 240px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.actionButton{
+    min-width: 110px;
+    height: 45px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.actionButton:hover{
+    background-color: black;
+    color: white;
+  
+}
+
