@@ -8,6 +8,7 @@ import CarouselSection from './Carousel/CarouselSection';
 import './Home.css'
 import ShopEquipmentSection from './ShopEquipments/ShopEquipmentSection';
 import BlogSection from './Blog/BlogSection';
+import SubscriptionSection from './Subscription/SubscriptionSection';
 
 function Home() {
   return (
@@ -74,6 +75,10 @@ function Home() {
       {/* Blog Section */}
 
       <BlogSection/>
+
+      {/* Subscription Section */}
+
+      <SubscriptionSection/>
 
     </div>
   )

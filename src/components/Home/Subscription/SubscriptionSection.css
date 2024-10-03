@@ -1,0 +1,31 @@
+.subscription{
+
+    
+    .subscription-image{
+        height : 600px;
+        background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_1024/https://images.ctfassets.net/7vk8puwnesgc/34uU5SKVqif5Yd3mZbPAiC/3bd987a82af4675f7c6ffa39e5a69f98/Peloton_App_-_Deals_Page_Image__desktop_.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        
+    }
+
+    .sub-section-heading{
+        font-size: 36px;
+     }
+
+     .sub-footer-text{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #969799;
+     }
+
+    @media screen and (max-width : 995px) {
+        .subscription-image{
+            height : 800px;
+            
+            
+        }
+    }
+
+}
