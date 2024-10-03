@@ -24,3 +24,15 @@
   
 }
 
+@media screen and (max-width : 735px ) {
+        
+    .landingButton{
+        width: 140px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+}
+

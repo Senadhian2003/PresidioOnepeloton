@@ -15,8 +15,9 @@ function Home() {
     <div className='home'>
 
       <div className="landing-page">
-        <div className="transparent-layer" ></div>
+       
         <Navbar></Navbar>
+         <div className="transparent-layer" ></div>
 
         <div className="landing-content  container ">
 
