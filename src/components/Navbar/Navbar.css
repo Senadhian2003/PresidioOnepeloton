@@ -15,11 +15,11 @@
     right: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 50;
     box-sizing: border-box;
     
 
-    ul{
+    .nav-elements-content,.nav-icon{
 
         list-style: none;
         display: flex;
@@ -51,5 +51,48 @@
         font-size: 18px;
 
     }
+
+    .hamburger{
+        display: none;
+    }
+
+    .collapsed-navbar{
+        padding: 2%;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        background-color: #181A1D;
+        color: white;
+        top: -3px;
+        right: 1px;
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            li{
+                font-weight: 700;
+                padding: 2%;
+
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width : 1145px) {
+        .hamburger{
+            display: inline;
+        }
+
+        .nav-elements-content{
+            display: none;
+        }
+
+    }
+
+
+
 
 }
