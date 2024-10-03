@@ -3,10 +3,11 @@ import Navbar from '../Navbar/Navbar'
 import LandingButton from './Buttons/LandingButton'
 import { IoIosArrowDown } from "react-icons/io";
 import EquipmentCard from './EquipmentSection/EquipmentCard/EquipmentCard';
-import EquipmentSection from './EquipmentSection/EquipmentCard/EquipmentSection';
+import EquipmentSection from './EquipmentSection/EquipmentSection';
 import CarouselSection from './Carousel/CarouselSection';
 import './Home.css'
 import ShopEquipmentSection from './ShopEquipments/ShopEquipmentSection';
+import BlogSection from './Blog/BlogSection';
 
 function Home() {
   return (
@@ -69,6 +70,10 @@ function Home() {
 
       {/* Shop Equipment Section */}
       <ShopEquipmentSection></ShopEquipmentSection>
+
+      {/* Blog Section */}
+
+      <BlogSection/>
 
     </div>
   )

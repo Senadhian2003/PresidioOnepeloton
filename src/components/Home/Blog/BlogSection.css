@@ -1,0 +1,21 @@
+.blog-section{
+    height: 700px;
+   
+    .title{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .quiz-section{
+        height: 270px;
+        border-radius: 15px;
+        max-width: 1250px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_768/https://images.ctfassets.net/7vk8puwnesgc/5zyUXs4BXG9RszirT6UHXY/fee599c4cbc8b6b4ef193aac80221f2f/tablet-quiz.png');
+        
+   
+    }
+
+
+}
