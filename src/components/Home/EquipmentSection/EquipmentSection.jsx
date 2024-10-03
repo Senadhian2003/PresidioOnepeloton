@@ -1,5 +1,5 @@
 import React from 'react';
-import EquipmentCard from './EquipmentCard';
+import EquipmentCard from './EquipmentCard/EquipmentCard';
 import styles from './EquipmentSection.module.css';
 
 function EquipmentSection() {

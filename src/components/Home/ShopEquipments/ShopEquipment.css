@@ -1,6 +1,6 @@
 .shop-equipment{
     margin-top: 200px;
-    height: 1900px;
+   
     background-color: #f4f7f9;
 
     .shopping-container{
@@ -9,19 +9,36 @@
     }
 
     .shop-equipment-card{
-        height: 750px;
+       
         
-        border: 1px solid black;
+        height: 800px;
         background-color: white;
         border-radius: 8px;
-        margin: 10px;
+        margin: 20px;
         text-align: center;
+        transition: box-shadow 0.3s ease-in;
         
+    }
+
+    .shop-equipment-card-final-odd{
+       
+        
+        height: auto;
+        background-color: white;
+        border-radius: 8px;
+        margin: 20px;
+        text-align: center;
+        transition: box-shadow 0.3s ease-in;
+        
+    }
+
+    .shop-equipment-card:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;        
     }
 
     .shop-equipment-card-container{
         /* margin-top: 100px; */
-        padding: 12%;
+        padding: 10% 10% 3% 10%;
     }
 
     .heading{
@@ -33,6 +50,11 @@
         font-size: 18px;
     }
 
+    .footer{
+        font-size: 12px;
+        color: #8F9093;
+    }
+
     .shop-now{
        margin-bottom: 0 ;
        margin-left: 20px;
@@ -40,19 +62,74 @@
        text-decoration: underline; 
     }
 
+    .shop-equipment-image{
+        transform: scale(0.9);
+    }
+
+    .shop-equipment-image-div{
+        height: 400px;
+        width: 100%;
+        background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_1.0,f_auto,q_auto:good,w_600/https://images.ctfassets.net/7vk8puwnesgc/wE0xDKnYxrha5Z7PWemsX/fd26bfadf5df9026d17c990b2feeecf7/Homepage_bikeplus.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+
+
     @media screen and (max-width: 1020px) {
         .shopping-container {
          padding-left: 0;
          padding-right: 0;
         }
 
+       
+
+        /* .shop-equipment-image{
+            transform: scale(0.4);
+        } */
+
+      }
+
+      @media screen and (max-width: 770px) {
+        .shopping-container {
+         padding-left: 0;
+         padding-right: 0;
+        }
+
         .shop-equipment-card{
-            height: 450px;
             
+           
            
             
         }
 
+        /* .shop-equipment-image{
+            transform: scale(0.4);
+        } */
+       
+
+      }
+
+
+      @media screen and (max-width: 995px) {
+       
+
+       
+
+        .shop-equipment-card{
+       
+        
+            height: auto;
+            background-color: white;
+            border-radius: 8px;
+            margin: 20px;
+            text-align: center;
+            transition: box-shadow 0.3s ease-in;
+            
+        }
       }
 
 
