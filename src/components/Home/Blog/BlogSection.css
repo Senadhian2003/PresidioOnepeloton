@@ -1,5 +1,5 @@
 .blog-section{
-    height: 700px;
+   
    
     .title{
         font-size: 36px;
@@ -16,6 +16,96 @@
         
    
     }
+
+    .section-content{
+        margin-top: 40px;
+    }
+
+    .blog-section-title{
+        font-size: 18px;
+        color: #65666a;
+        margin-bottom: 0;
+    }
+
+    .blog-section-heading{
+       font-size: 36px;
+    }
+
+    .blog-image{
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+
+
+    }
+
+
+    .blog-image-inner{
+        height: 400px;
+        width: 100%;
+        background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_256/https://images.ctfassets.net/7vk8puwnesgc/7AG9vk63T88Xs69QwNGtbm/36d514723dd231a5e3ac2b83c3ff095a/Peloton-LosAngeles-2023-04-27-CedricDanny-Shot4-04519_800x490.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.5s ease; 
+
+    }
+
+    .blog-content{
+        padding: 2%;
+        text-align: center;
+        height: 150px;
+        width: 85%;
+       background-color: white;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        bottom: 100px;
+        transition: transform 0.5s ease; 
+        
+    }
+
+    .blog-section-context{
+        margin-bottom: 0;
+        color: #7b7c7f;
+    }
+    
+    .blog-container:hover .blog-image-inner{
+
+        transform: scale(1.05);
+
+    }
+
+    .blog-container:hover .blog-content{
+
+        transform: translateY(-10px);
+
+    }
+
+    @media screen and (max-width: 995px) {
+       
+        .blog-image-inner{
+            height: 600px;
+            width: 100%;
+            background-image: url('https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_256/https://images.ctfassets.net/7vk8puwnesgc/7AG9vk63T88Xs69QwNGtbm/36d514723dd231a5e3ac2b83c3ff095a/Peloton-LosAngeles-2023-04-27-CedricDanny-Shot4-04519_800x490.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+    
+    
+        }
+
+        .blog-image{
+            height: 600px;
+            width: 100%;
+           
+    
+    
+        }
+       
+
+       
+      }
+
 
 
 }
