@@ -3,6 +3,7 @@ import styles from './Buttons.module.css'
 function ActionButton({content, backgroundColor, textColor, border, hoverBackgroundColor, hoverTextColor, width}) {
   return (
     <button
+   
     style={{
       backgroundColor: backgroundColor,
       color: textColor,

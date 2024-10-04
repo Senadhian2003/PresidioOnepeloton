@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import './Navbar.css'
 
 import { IoIosArrowDown } from "react-icons/io";
@@ -6,7 +6,24 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import { IoCloseOutline } from "react-icons/io5";
 
+import { useSelector } from 'react-redux';
+
 function Navbar() {
+
+    const state = useSelector(state=>state.cart.cartItems)
+    console.log(state.length)
+
+    const totalItems = useMemo(()=>{
+        let count =0;
+        let i = 0
+        for(i=0;i<state.length;i++){
+            count+=state[i].quantity
+        }
+        return count
+
+    },[state])
+
+    console.log("Totla Items : ",totalItems)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,7 +61,7 @@ function Navbar() {
 
 
                     <li>
-                        Classes
+                        Classes 
                         <span className='down-arrow'>  <IoIosArrowDown size={'14px'} /></span>
 
                     </li>
@@ -114,7 +131,7 @@ function Navbar() {
             <ul className='nav-elements-content'>
 
                 <li>
-                    Classes
+                    Classes 
                     <span className='down-arrow'>  <IoIosArrowDown size={'14px'} /></span>
 
                 </li>
@@ -158,6 +175,7 @@ function Navbar() {
 
                 <li>
                     {/* <IoCartOutline  size='30px' color='white'/> */}
+                    <div data-test-id="cart-icon-count" class="cart-count">{totalItems}</div>
                     <svg height="32" viewBox="0 0 32 32" fill="none" aria-labelledby="m1q663bwlac1u4cyapjdyjq6" class="AsyncIcon__StyledIcon-design-system__sc-9oyiwf-0 bvUoNw" focusable="false" preserveAspectRatio="xMidYMid meet"><title id="m1q663bwlac1u4cyapjdyjq6">Cart-l10n</title><path d="M11.736 8.047H27.41a.3.3 0 0 1 .292.371l-2.676 10.99a.3.3 0 0 1-.291.23h-13.76a.3.3 0 0 1-.287-.21L6.52 6.21A.3.3 0 0 0 6.233 6H4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path><circle cx="22.75" cy="25.043" r="1.75" fill="#FFFFFF"></circle><circle cx="12.75" cy="25.043" r="1.75" fill="#FFFFFF"></circle></svg>
                 </li>
 
