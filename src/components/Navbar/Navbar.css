@@ -52,6 +52,20 @@
 
     }
 
+    .cart-count{
+        background-color: red;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+       right: 18px;
+        bottom: 32px;
+        border-radius: 25px;
+        font-size: small;
+        text-align: center;
+        color: white;
+        font-weight: 800;
+    }
+
     .hamburger{
         display: none;
     }

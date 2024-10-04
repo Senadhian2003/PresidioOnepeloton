@@ -29,7 +29,7 @@ function ShopEquipmentSection() {
 
       {
         data.map((element, index)=>{
-          return   <ShopEquipmentCard key={element.id} title={element.title} content={element.content} price={element.price} buttonContent={element.buttonContent} imageUrl={element.imageUrl} subscriptionMessage={element.subscriptionMessage} isFinalAndOdd={index===data.length-1 && index%2===0} />
+          return   <ShopEquipmentCard key={element.id} element={element} isFinalAndOdd={index===data.length-1 && index%2===0} />
      
     
         })
