@@ -37,7 +37,7 @@ function CarouselSection() {
         
        {
         data.map((element, index)=>{
-            return <CarouselCell imageUrl={element.imageUrl} heading={element.heading} />
+            return <CarouselCell key={index} imageUrl={element.imageUrl} heading={element.heading} />
             
        
         })

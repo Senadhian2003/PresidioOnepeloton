@@ -67,6 +67,7 @@
     .blog-section-context{
         margin-bottom: 0;
         color: #7b7c7f;
+        width: 200px;
     }
     
     .blog-container:hover .blog-image-inner{

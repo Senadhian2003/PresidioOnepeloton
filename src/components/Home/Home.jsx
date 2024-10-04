@@ -9,6 +9,7 @@ import './Home.css'
 import ShopEquipmentSection from './ShopEquipments/ShopEquipmentSection';
 import BlogSection from './Blog/BlogSection';
 import SubscriptionSection from './Subscription/SubscriptionSection';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -30,8 +31,8 @@ function Home() {
             
 
               <LandingButton backgroundColor='#CDFF38' textColor='black' hoverBackgroundColor='white' hoverTextColor='black' content='Shop Tread' border='none' ></LandingButton>
-              <LandingButton backgroundColor='transparent' textColor='white' hoverBackgroundColor='white' hoverTextColor='black' content='Shop Tread+' border='2px solid white'></LandingButton>
-
+          <Link to="/home"> <LandingButton  backgroundColor='transparent' textColor='white' hoverBackgroundColor='white' hoverTextColor='black' content='Shop Tread+' border='2px solid white'></LandingButton>
+          </Link>   
             </div>
 
 
