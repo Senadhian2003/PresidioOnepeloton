@@ -4,7 +4,21 @@ import ActionButton from '../Buttons/ActionButton'
 
 function BlogSection() {
 
-  const data = [0, 1, 2]
+  const data = [{
+    title:'The starting line',
+    content: 'How to get back into working out',
+    imageUrl : 'https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_256/https://images.ctfassets.net/7vk8puwnesgc/7AG9vk63T88Xs69QwNGtbm/36d514723dd231a5e3ac2b83c3ff095a/Peloton-LosAngeles-2023-04-27-CedricDanny-Shot4-04519_800x490.jpg'
+  },
+  {
+    title:'The Long game',
+    content: '12 steps to build a fitness routine that sticks',
+    imageUrl : 'https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_256/https://images.ctfassets.net/7vk8puwnesgc/3hKBg366U2U3KHyXm0p9fx/49dcbada93dd45ee1df5af89be2851b2/SHOT_3_02006_800x490__1_.jpg'  },
+  {
+    title:'The work',
+    content: 'New to running? Here is how to get started',
+    imageUrl : 'https://res.cloudinary.com/peloton-cycle/image/fetch/dpr_2.0,f_auto,q_auto:good,w_256/https://images.ctfassets.net/7vk8puwnesgc/4trU163wF4CL4wmLkDMQNC/92d5dd9d561d369afd632e84339905dd/SHOT_23_08133_800x490.jpg'  },
+  
+]
 
   return (
     <div className='blog-section'>
@@ -29,11 +43,11 @@ function BlogSection() {
 
           {
             data.map((element, index) => {
-              return <div className="col-lg-4">
+              return <div key={index} className="col-lg-4">
 
                 <div className="blog-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                   <div className='blog-image'>
-                    <div className="blog-image-inner">
+                    <div className="blog-image-inner" style={{backgroundImage : `url(${element.imageUrl})`}}>
 
 
                     </div>
@@ -42,11 +56,9 @@ function BlogSection() {
 
                   <div className="blog-content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-                    <p className='inter-medium blog-section-title'>The starting line</p>
+                    <p className='inter-medium blog-section-title'>{element.title}</p>
                     <hr style={{ width: '20%', textAlign: 'center', marginLeft: '0' }} />
-                    <p className='blog-section-context'>How to get back into
-                      <br />
-                      working out</p>
+                    <p className='blog-section-context'>{element.content}</p>
                   </div>
 
 
