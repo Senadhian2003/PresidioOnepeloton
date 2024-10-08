@@ -4,25 +4,33 @@ import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import ProtectedRoute from './components/HigherOrderComponents/ProtectedRoute';
-import Training from './components/Training/Training';
+import Checkout from './components/Training/Checkout';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Login from './components/Authentication/Login';
 
 
 function App() {
+  const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: 1 } },
+  });
+  
   return (
+    <QueryClientProvider client={queryClient}>
     <div className="App">
      <BrowserRouter>
      
      <Routes>
      <Route path="/" element={<Home />} />
 
-      <Route path='/home' element={<ProtectedRoute><Training/></ProtectedRoute>}/>
+      <Route path='/checkout' element={<ProtectedRoute><Checkout/></ProtectedRoute>}/>
 
-
+      <Route path="/login" element={<Login />} />
      </Routes>
      
      
      </BrowserRouter>
     </div>
+    </QueryClientProvider>
   );
 }
 

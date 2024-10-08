@@ -4,14 +4,18 @@ import LandingButton from './Buttons/LandingButton'
 import { IoIosArrowDown } from "react-icons/io";
 import EquipmentCard from './EquipmentSection/EquipmentCard/EquipmentCard';
 import EquipmentSection from './EquipmentSection/EquipmentSection';
-import CarouselSection from './Carousel/CarouselSection';
+import {CarouselSection} from './Carousel/CarouselSection';
 import './Home.css'
-import ShopEquipmentSection from './ShopEquipments/ShopEquipmentSection';
+import {ShopEquipmentSection} from './ShopEquipments/ShopEquipmentSection';
 import BlogSection from './Blog/BlogSection';
 import SubscriptionSection from './Subscription/SubscriptionSection';
 import { Link } from 'react-router-dom';
+import { useGetShoppingItems } from '../../api/react-query';
+import { useGetCarouselItems } from '../../api/react-query';
 
 function Home() {
+  const { data : carouselItems, isFetching: isCarouselItemsFetching, error : isCarouselError } = useGetCarouselItems();
+  const { data : shopItems, isFetching : isShopItemsFetching, error : isShopeError } = useGetShoppingItems();
   return (
     <div className='home'>
 
@@ -69,10 +73,10 @@ function Home() {
 
 
       {/* Carousel Section */}
-      <CarouselSection />
+      <CarouselSection data={carouselItems?.data} isLoading={isCarouselItemsFetching} error={isCarouselError?.message} />
 
       {/* Shop Equipment Section */}
-      <ShopEquipmentSection></ShopEquipmentSection>
+      <ShopEquipmentSection data={shopItems?.data} isLoading={isShopItemsFetching} error={isShopeError?.message}></ShopEquipmentSection>
 
       {/* Blog Section */}
 
