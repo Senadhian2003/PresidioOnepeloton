@@ -5,7 +5,7 @@ import { login, logout } from '../../store/authSlice';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const dispatch = useDispatch()
     const [userData, setUserData] = useState({
         email : '',

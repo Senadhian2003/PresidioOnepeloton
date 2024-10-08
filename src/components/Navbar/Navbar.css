@@ -43,7 +43,7 @@
         }
 
         .cart-item-quantity{
-            color: className='cart-item-title';
+            color: var(--secondary-text-color);
             font-size: 12px;
         }
         
