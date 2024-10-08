@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    cartItems : []
+    cartItems : [],
+    isCartOpen: false
 }
 
 const cartSlice = createSlice({
@@ -11,7 +12,7 @@ const cartSlice = createSlice({
 
         addCartItem : (state, action)=>{
 
-           if(state.cartItems.some((item)=> item.id == action.payload.id)){
+           if(state.cartItems.some((item)=> item.id === action.payload.id)){
             state.cartItems = state.cartItems.map((item)=> item.id===action.payload.id ? {...item, quantity : item.quantity + 1} : item )
            }
            else{
@@ -26,7 +27,20 @@ const cartSlice = createSlice({
 
             state.cartItems = state.cartItems.filter((item)=> item.id !== action.payload.id)
 
+        },
+
+        toogleCartPanel:(state,action)=>{
+
+            if(state.isCartOpen){
+                state.isCartOpen = false
+            }
+            else{
+                state.isCartOpen = true
+            }
+
         }
+
+
 
 
     }
@@ -34,5 +48,5 @@ const cartSlice = createSlice({
 })
 
 
-export const {addCartItem, removeCartItem} = cartSlice.actions;
+export const {addCartItem, removeCartItem, toogleCartPanel} = cartSlice.actions;
 export default cartSlice.reducer
